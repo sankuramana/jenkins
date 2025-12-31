@@ -4,7 +4,7 @@ pipeline {
             label 'AGENT-1'
         }
     }
-    environments {
+    environment {
          COURCE = "jenkins"
     }
     stages {

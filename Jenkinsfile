@@ -15,6 +15,7 @@ pipeline {
                     sh """
                 echo "building"
                 echo $COURCE
+                env
                 """
                 }
             }

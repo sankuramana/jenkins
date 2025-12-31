@@ -24,6 +24,15 @@ pipeline {
     post{
         always{
             echo " i will always say ello again!"
+            cleanWs() // for not getting claseh when you run agnain
+        }
+        success{
+
+            echo " i will run if success"
+        }
+        failure{
+
+            echo " i will run if failure"
         }
     }
 }

@@ -26,7 +26,8 @@ pipeline {
                     sh """
                 echo "building"
                 echo $COURCE
-                // sleep 10
+                # sleep 10
+
                 env 
                 """
                 }

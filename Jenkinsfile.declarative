@@ -7,32 +7,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                script
-                {
-                    sh """
                 echo "building"
-                """
-                }
             }
         }
         stage('Test') {
             steps {
-               script
-                {
-                    sh """
                 echo "Testing"
-                """
-                }
             }
         }
         stage('Deploy') {
             steps {
-               script
-                {
-                    sh """
-                echo "Deploying"
-                """
-                }
+                echo "Deploye"
             }
         }
     }
@@ -50,4 +35,4 @@ pipeline {
             echo " i will run if failure"
         }
     }
-} 
+}

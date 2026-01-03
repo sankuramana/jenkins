@@ -6,6 +6,7 @@ pipeline {
     }
     environment {
          COURCE ="jenkins"
+
     }
     stages {
         stage('Build') {
@@ -15,6 +16,7 @@ pipeline {
                 
                 sh """
                 echo "building"
+                env
                 sh """
                 }
             }

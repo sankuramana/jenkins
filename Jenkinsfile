@@ -101,7 +101,7 @@ pipeline {
         }
     }
     post{
-        always{
+        always
             echo " i will always say ello again!"
             cleanWs()
             

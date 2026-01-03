@@ -50,7 +50,7 @@ pipeline {
             }
         }
         stage('Deploy') {
-             input {
+             input { //taking input and from user and prceed deploye 
                 message "Should we continue?"
                 ok "Yes, we should."
                 submitter "alice,bob"

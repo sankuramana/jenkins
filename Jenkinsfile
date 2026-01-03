@@ -103,7 +103,14 @@ pipeline {
     post{
         always{
             echo " i will always say ello again!"
+            cleanWs()
             
+        }
+        success {
+            echo "hello i will run when pipeline success"
+        }
+        failure{
+            echo "hello iwill run if pipeline failure"
         }
     }
 }

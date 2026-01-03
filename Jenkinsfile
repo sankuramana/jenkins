@@ -94,14 +94,14 @@ pipeline {
                 echo "Testing"
             }
         }
-        stage('Deploy') {
+        stage('Deploy' {
             steps {
                 echo "Deploye"
             }
         }
     }
     post{
-        always
+        always{
             echo " i will always say ello again!"
             cleanWs()
             
